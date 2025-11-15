@@ -306,9 +306,12 @@ nav {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem clamp(1rem, 5vw, 3rem) 5rem;
+  padding: 1rem clamp(1rem, 5vw, 3rem) 5rem;
 }
 
+section {
+  margin-top: 4rem;
+}
 .section-label {
   display: inline-flex;
   padding: 0.6rem 1.5rem;
@@ -320,6 +323,7 @@ main {
 }
 
 .section-heading {
+  /* margin-top: 4rem; */
   margin-bottom: 1.5rem;
   display: inline-flex;
   align-items: center;
@@ -471,9 +475,9 @@ main {
 }
 
 .featured h2 {
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem;
   font-size: clamp(1.5rem, 4vw, 2.4rem);
-  text-transform: capitalize;
+  text-transform: capitalize; */
 }
 
 .featured-subtext {
@@ -534,16 +538,16 @@ main {
 }
 
 .catalog {
-  margin-top: clamp(2.5rem, 5vw, 4rem);
-  padding: clamp(2rem, 6vw, 3.75rem);
-  border-radius: 40px;
-  background: radial-gradient(
+  /* margin-top: clamp(2.5rem, 5vw, 4rem); */
+  /* padding: clamp(2rem, 6vw, 3.75rem); */
+  /* border-radius: 40px; */
+  /* background: radial-gradient(
       circle at 15% 20%,
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0)
     ),
     linear-gradient(135deg, rgba(91, 0, 255, 0.08), rgba(255, 53, 196, 0.12));
-  box-shadow: 0 35px 60px rgba(15, 2, 40, 0.15);
+  box-shadow: 0 35px 60px rgba(15, 2, 40, 0.15); */
 }
 
 .catalog-head {
@@ -558,7 +562,7 @@ main {
 
 .catalog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
@@ -586,7 +590,7 @@ main {
 .catalog-card {
   background: #fff;
   border-radius: 28px;
-  padding: 1.75rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -663,7 +667,23 @@ main {
 .catalog-card-footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    120deg,
+    rgba(91, 0, 255, 0.15),
+    rgba(255, 53, 196, 0.2)
+  );
+  color: var(--text-dark);
+  box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.4);
 }
 
 .catalog-card-footer .price {
@@ -674,6 +694,11 @@ main {
 
 .catalog-card-footer .cycle {
   display: block;
+  font-size: 0.85rem;
+  color: var(--purple-mid);
+}
+
+.price-hint {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
