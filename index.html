@@ -56,7 +56,6 @@
         </div>
       </div>
       <div class="hero-slider">
-        <div class="slider-headline">Featured products</div>
         <div class="splide product-splide" id="productSlider">
           <div class="splide__track">
             <ul class="splide__list">
@@ -138,66 +137,27 @@
 
     <main>
       <section id="solutions">
-        <div class="section-label">What we offer</div>
-        <h2 class="section-heading">
-          Pick a category, plug it in, and start growing.
-        </h2>
+        <h2 class="section-heading solutions-pill">ما الذي نقدمة</h2>
 
-        <div class="cards-row">
-          <article class="offer-card">
+        <div class="cards-row solutions-cards">
+          <a class="offer-card" href="#services">
             <img
               src="images/services.png"
               alt="Service illustration placeholder"
             />
-            <h3>Services</h3>
-            <p>
-              On-demand marketing, programming, and automation teams for every
-              launch.
-            </p>
-          </article>
-          <article class="offer-card">
+          </a>
+          <a class="offer-card" href="#subscriptions">
             <img
               src="images/subscriptions.png"
               alt="Subscriptions illustration placeholder"
             />
-            <h3>Subscriptions</h3>
-            <p>
-              Curated SaaS bundles that keep designers, analysts, and managers
-              in sync.
-            </p>
-          </article>
-          <article class="offer-card">
+          </a>
+          <a class="offer-card" href="#offers">
             <img
               src="images/offers.png"
               alt="Offers illustration placeholder"
             />
-            <h3>Special offers</h3>
-            <p>
-              Deals, vouchers, and seasonal packages so you pay only for what
-              you deploy.
-            </p>
-          </article>
-        </div>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <strong>Security first</strong>
-            <p>All payments and client assets are encrypted end-to-end.</p>
-          </div>
-          <div class="feature-card">
-            <strong>Local + global</strong>
-            <p>Experts in your time zone with a global network behind them.</p>
-          </div>
-          <div class="feature-card">
-            <strong>Lightning delivery</strong>
-            <p>Kickoff calls in under 24 hours for most bundles.</p>
-          </div>
-          <div class="feature-card">
-            <strong>Dedicated care</strong>
-            <p>
-              Concierge chat, WhatsApp, and email included with every order.
-            </p>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -242,6 +202,337 @@
             <strong>200</strong>
             <span>active bundles</span>
           </div>
+        </div>
+      </section>
+      <section class="featured" aria-labelledby="featured-heading">
+        <h2 class="section-heading solutions-pill">الأعلى رواجاً</h2>
+
+        <div class="featured-grid">
+          <article class="featured-box" aria-label="Autodesk collection">
+            <div class="featured-box-inner">
+              <img
+                src="images/autodesk.png"
+                alt="Autodesk logo"
+                loading="lazy"
+              />
+            </div>
+          </article>
+          <article class="featured-box" aria-label="OpenAI collection">
+            <div class="featured-box-inner">
+              <img
+                src="images/gemini.png"
+                alt="OpenAI ChatGPT logo"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="catalog"
+        id="catalog"
+        aria-labelledby="catalog-heading"
+      >
+        <div class="section-label">Store shelf</div>
+        <div class="catalog-head">
+          <h2 class="section-heading" id="catalog-heading">
+            Browse every bundle
+          </h2>
+          <p>
+            Unified passes for the tools and teams you love. Tag a favorite and
+            keep it on your radar for the next sprint.
+          </p>
+        </div>
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div class="catalog-card-media">
+              <img
+                src="images/45.png"
+                alt="Launch Studio workspace preview"
+                loading="lazy"
+              />
+            </div>
+            <div class="catalog-card-top">
+              <div class="catalog-tags">
+                <span class="catalog-tag">Automation</span>
+                <span class="catalog-tag soft">Pro</span>
+              </div>
+              <button
+                class="wishlist-btn"
+                type="button"
+                aria-label="Add Launch Studio to wishlist"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.5 6.25C20.5 3.774 18.505 1.75 16.063 1.75C14.452 1.75 13.037 2.573 12.25 3.83C11.463 2.573 10.048 1.75 8.437 1.75C5.995 1.75 4 3.774 4 6.25C4 13.086 12.25 18.25 12.25 18.25C12.25 18.25 20.5 13.086 20.5 6.25Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h3>Launch Studio</h3>
+            <p>
+              Turn campaign ideas into packaged workflows with AI-assisted
+              briefs and automation wiring.
+            </p>
+            <div class="catalog-card-footer">
+              <div>
+                <span class="price">$199</span>
+                <span class="cycle">per month</span>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card">
+            <div class="catalog-card-media">
+              <img
+                src="images/46.png"
+                alt="Pulse Analytics dashboard view"
+                loading="lazy"
+              />
+            </div>
+            <div class="catalog-card-top">
+              <div class="catalog-tags">
+                <span class="catalog-tag">AI</span>
+                <span class="catalog-tag soft">Insights</span>
+              </div>
+              <button
+                class="wishlist-btn"
+                type="button"
+                aria-label="Add Pulse Analytics to wishlist"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.5 6.25C20.5 3.774 18.505 1.75 16.063 1.75C14.452 1.75 13.037 2.573 12.25 3.83C11.463 2.573 10.048 1.75 8.437 1.75C5.995 1.75 4 3.774 4 6.25C4 13.086 12.25 18.25 12.25 18.25C12.25 18.25 20.5 13.086 20.5 6.25Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h3>Pulse Analytics</h3>
+            <p>
+              Always-on reporting pod that pairs GPT dashboards with analyst
+              review for decisions on demand.
+            </p>
+            <div class="catalog-card-footer">
+              <div>
+                <span class="price">$149</span>
+                <span class="cycle">per report</span>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card">
+            <div class="catalog-card-media">
+              <img
+                src="images/47.png"
+                alt="Creative Sprints design preview"
+                loading="lazy"
+              />
+            </div>
+            <div class="catalog-card-top">
+              <div class="catalog-tags">
+                <span class="catalog-tag">Design</span>
+                <span class="catalog-tag soft">Team</span>
+              </div>
+              <button
+                class="wishlist-btn"
+                type="button"
+                aria-label="Add Creative Sprints to wishlist"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.5 6.25C20.5 3.774 18.505 1.75 16.063 1.75C14.452 1.75 13.037 2.573 12.25 3.83C11.463 2.573 10.048 1.75 8.437 1.75C5.995 1.75 4 3.774 4 6.25C4 13.086 12.25 18.25 12.25 18.25C12.25 18.25 20.5 13.086 20.5 6.25Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h3>Creative Sprints</h3>
+            <p>
+              Modular design squad ready to spin up landing pages, decks, and
+              system updates overnight.
+            </p>
+            <div class="catalog-card-footer">
+              <div>
+                <span class="price">$240</span>
+                <span class="cycle">per sprint</span>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card">
+            <div class="catalog-card-media">
+              <img
+                src="images/48.png"
+                alt="Support Pods helpdesk view"
+                loading="lazy"
+              />
+            </div>
+            <div class="catalog-card-top">
+              <div class="catalog-tags">
+                <span class="catalog-tag">CX</span>
+                <span class="catalog-tag soft">Monthly</span>
+              </div>
+              <button
+                class="wishlist-btn"
+                type="button"
+                aria-label="Add Support Pods to wishlist"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.5 6.25C20.5 3.774 18.505 1.75 16.063 1.75C14.452 1.75 13.037 2.573 12.25 3.83C11.463 2.573 10.048 1.75 8.437 1.75C5.995 1.75 4 3.774 4 6.25C4 13.086 12.25 18.25 12.25 18.25C12.25 18.25 20.5 13.086 20.5 6.25Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h3>Support Pods</h3>
+            <p>
+              Embedded helpdesk talent with automations for macros, tickets, and
+              proactive churn saves.
+            </p>
+            <div class="catalog-card-footer">
+              <div>
+                <span class="price">$120</span>
+                <span class="cycle">per seat</span>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card">
+            <div class="catalog-card-media">
+              <img
+                src="images/49.png"
+                alt="Brand Guardian brand system board"
+                loading="lazy"
+              />
+            </div>
+            <div class="catalog-card-top">
+              <div class="catalog-tags">
+                <span class="catalog-tag">Strategy</span>
+                <span class="catalog-tag soft">Retainer</span>
+              </div>
+              <button
+                class="wishlist-btn"
+                type="button"
+                aria-label="Add Brand Guardian to wishlist"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.5 6.25C20.5 3.774 18.505 1.75 16.063 1.75C14.452 1.75 13.037 2.573 12.25 3.83C11.463 2.573 10.048 1.75 8.437 1.75C5.995 1.75 4 3.774 4 6.25C4 13.086 12.25 18.25 12.25 18.25C12.25 18.25 20.5 13.086 20.5 6.25Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h3>Brand Guardian</h3>
+            <p>
+              Fractional brand lead aligning product, ads, and CX so every touch
+              matches your purple DNA.
+            </p>
+            <div class="catalog-card-footer">
+              <div>
+                <span class="price">$310</span>
+                <span class="cycle">per block</span>
+              </div>
+            </div>
+          </article>
+          <article class="catalog-card">
+            <div class="catalog-card-media">
+              <img
+                src="images/01.png"
+                alt="Campaign Cabin launch asset collage"
+                loading="lazy"
+              />
+            </div>
+            <div class="catalog-card-top">
+              <div class="catalog-tags">
+                <span class="catalog-tag">Growth</span>
+                <span class="catalog-tag soft">Lite</span>
+              </div>
+              <button
+                class="wishlist-btn"
+                type="button"
+                aria-label="Add Campaign Cabin to wishlist"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.5 6.25C20.5 3.774 18.505 1.75 16.063 1.75C14.452 1.75 13.037 2.573 12.25 3.83C11.463 2.573 10.048 1.75 8.437 1.75C5.995 1.75 4 3.774 4 6.25C4 13.086 12.25 18.25 12.25 18.25C12.25 18.25 20.5 13.086 20.5 6.25Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <h3>Campaign Cabin</h3>
+            <p>
+              Lightweight launch bundle pairing copy, ads, and QA so you can
+              test new markets in a week.
+            </p>
+            <div class="catalog-card-footer">
+              <div>
+                <span class="price">$98</span>
+                <span class="cycle">per launch</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>
