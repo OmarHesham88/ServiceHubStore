@@ -23,7 +23,7 @@
         <div class="curve" aria-hidden="true"></div>
         <nav>
           <a class="brand" href="#">
-            <img src="images/logo-mark.png" alt="Service Hub logo" />
+            <img src="images/logo.png" alt="Service Hub logo" />
             <span>Service Hub</span>
           </a>
           <div class="nav-links" id="navLinks">
@@ -62,24 +62,11 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <article class="product-slide">
-                  <div class="card-thumb">Chat GPT</div>
-                  <h3>AI copy studio</h3>
-                  <div class="price-tag">
-                    <span>$59</span>
-                    <button class="cart-btn">Add</button>
-                  </div>
-                </article>
-              </li>
-              <li class="splide__slide">
-                <article class="product-slide">
-                  <div
+                  <img
+                    src="images/canva-carousel.png"
+                    alt="Canva logo"
                     class="card-thumb"
-                    style="
-                      background: linear-gradient(150deg, #0d86ff, #04d6e6);
-                    "
-                  >
-                    Canva
-                  </div>
+                  />
                   <h3>Design accelerator</h3>
                   <div class="price-tag">
                     <span>$55</span>
@@ -89,14 +76,11 @@
               </li>
               <li class="splide__slide">
                 <article class="product-slide">
-                  <div
+                  <img
+                    src="images/perplexity-carousel.png"
+                    alt="Canva logo"
                     class="card-thumb"
-                    style="
-                      background: linear-gradient(150deg, #ff8d4d, #ff2cd5);
-                    "
-                  >
-                    Gamma
-                  </div>
+                  />
                   <h3>Pitch kit</h3>
                   <div class="price-tag">
                     <span>$55</span>
@@ -106,51 +90,42 @@
               </li>
               <li class="splide__slide">
                 <article class="product-slide">
-                  <div
+                  <img
+                    src="images/chatgpt-carousel.png"
+                    alt="chatgpt"
                     class="card-thumb"
-                    style="
-                      background: linear-gradient(150deg, #050505, #5f5f5f);
-                    "
-                  >
-                    Autodesk
-                  </div>
-                  <h3>3D &amp; CAD bundle</h3>
+                  />
+                  <h3>Pitch kit</h3>
                   <div class="price-tag">
-                    <span>$72</span>
+                    <span>$24</span>
                     <button class="cart-btn">Add</button>
                   </div>
                 </article>
               </li>
               <li class="splide__slide">
                 <article class="product-slide">
-                  <div
+                  <img
+                    src="images/gamma-carousel.png"
+                    alt="chatgpt"
                     class="card-thumb"
-                    style="
-                      background: linear-gradient(150deg, #03c8ff, #7500ff);
-                    "
-                  >
-                    Perplexity
-                  </div>
-                  <h3>Research pro</h3>
+                  />
+                  <h3>Pitch kit</h3>
                   <div class="price-tag">
-                    <span>$60</span>
+                    <span>$24</span>
                     <button class="cart-btn">Add</button>
                   </div>
                 </article>
               </li>
               <li class="splide__slide">
                 <article class="product-slide">
-                  <div
+                  <img
+                    src="images/autodesk-carousel.png"
+                    alt="chatgpt"
                     class="card-thumb"
-                    style="
-                      background: linear-gradient(150deg, #ffe347, #ff6b00);
-                    "
-                  >
-                    Cluede
-                  </div>
-                  <h3>Workflow automations</h3>
+                  />
+                  <h3>Pitch kit</h3>
                   <div class="price-tag">
-                    <span>$45</span>
+                    <span>$24</span>
                     <button class="cart-btn">Add</button>
                   </div>
                 </article>
@@ -167,9 +142,13 @@
         <h2 class="section-heading">
           Pick a category, plug it in, and start growing.
         </h2>
+
         <div class="cards-row">
           <article class="offer-card">
-            <img src="images/01.jpg" alt="Service illustration placeholder" />
+            <img
+              src="images/services.png"
+              alt="Service illustration placeholder"
+            />
             <h3>Services</h3>
             <p>
               On-demand marketing, programming, and automation teams for every
@@ -178,7 +157,7 @@
           </article>
           <article class="offer-card">
             <img
-              src="images/02.jpg"
+              src="images/subscriptions.png"
               alt="Subscriptions illustration placeholder"
             />
             <h3>Subscriptions</h3>
@@ -188,7 +167,10 @@
             </p>
           </article>
           <article class="offer-card">
-            <img src="images/03.jpg" alt="Offers illustration placeholder" />
+            <img
+              src="images/offers.png"
+              alt="Offers illustration placeholder"
+            />
             <h3>Special offers</h3>
             <p>
               Deals, vouchers, and seasonal packages so you pay only for what
@@ -271,39 +253,6 @@
     <!-- carousel library -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
-    <script>
-      const navLinks = document.getElementById("navLinks");
-      const menuToggle = document.getElementById("menuToggle");
-      const yearSpan = document.getElementById("year");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-      });
-
-      yearSpan.textContent = new Date().getFullYear();
-
-      if (window.Splide) {
-        const slider = new Splide("#productSlider", {
-          type: "loop",
-          autoWidth: true,
-          pagination: false,
-          arrows: false,
-          drag: "free",
-          focus: "center",
-          breakpoints: {
-            700: {
-              focus: "left",
-            },
-          },
-          autoScroll: {
-            speed: 0.9,
-            pauseOnHover: true,
-          },
-        });
-
-        const extensions = window.splide?.Extensions || {};
-        slider.mount(extensions);
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
